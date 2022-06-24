@@ -25,7 +25,7 @@ ui <- fluidPage(id = 'test',
     
     # Show a plot of the generated distribution
 
-        HTML("<center>"),     img(src = "final_plot.png", width = "660px", height = "990px"),  HTML("<center>")
+        HTML("<center>"),     img(src = "background.png", width = "660px", height = "1000px" ),  HTML("<center>")
     )
 
 
