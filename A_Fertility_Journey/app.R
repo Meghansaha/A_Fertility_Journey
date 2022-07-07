@@ -8,7 +8,7 @@ library(shiny) # For making the app
 ui <- fluidPage(id = 'test',
                 tags$style('#test {
                              background-color: #000000;}'),
-              
+                
     # Modal dialog boxes gives a pop-up dialog box on the shiny app. 
     # Style settings can be adjusted for individual needs. 
     # These options completely hides the visual UNLESS the user clicks the green button
