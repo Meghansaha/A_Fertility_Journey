@@ -18,8 +18,7 @@ ui <- fluidPage(id = 'test',
                 tags$head(tags$style(".modal-body{ min-height:100%}")),
                 tags$head(tags$style(".modal-backdrop{ opacity:1 !important;}")),
                 span("The visual on this page mentions topics that may be sensitve or triggering for some like miscarriages, infertility, and pregnancy. If you do not wish to view this material please close this window or press the 'Back' button on your browser to exit."),
-                footer = HTML('<button style="position: relative; center: 0%; background-color: #f44336;" onclick="top.close()" style = >DON\'T Show the Visual (Close)</button>
-                               <button style="position: relative; center: 0%; background-color: #4CAF50;" type="button"  data-dismiss="modal" data-bs-dismiss="modal">Show the Visual (Continue)</button>
+                footer = HTML('<button style="position: relative; center: 0%; background-color: #4CAF50;" type="button"  data-dismiss="modal" data-bs-dismiss="modal">Show the Visual (Continue)</button>
                               '),
                 size = c("s"),
                 easyClose = FALSE,
@@ -29,16 +28,16 @@ ui <- fluidPage(id = 'test',
     # Simply placing an externally made plot into the shiny UI====
     
     HTML("<center>"), 
-    img(src = "background.png", width = "660px", height = "1000px" ),  
+    HTML("<img src = 'background.png'>"),
     HTML("<center>")
-    )
+)
 
 
 
 # Define server logic required====
 server <- function(input, output) {
-  # All elements are handled manually in the UI. Server still needs to be defined to run though.
 }
 
 # Run the application 
 shinyApp(ui = ui, server = server)
+
