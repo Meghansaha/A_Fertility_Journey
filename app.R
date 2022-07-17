@@ -25,10 +25,14 @@ ui <- fluidPage(id = 'test',
                 fade = TRUE),
     
     
-    # Simply placing an externally made plot into the shiny UI====
+    # Simply placing an externally made image into the shiny UI====
     
     HTML("<center>"), 
-    HTML("<img src = 'background.png'>"),
+    HTML("<img src = 'background.png', alt= 'A Fertility Journey: A rainbow-colored stacked bubble chart with the following text above it: According to the United States Center for Disease Control and Prevention, Infertility is defined as not being able to get pregnant (conceive) after one year (or longer) of unprotected sex. This can create anxiety and stress for individuals that are actively trying to get pregnant and haven't within one year. So much is unknown to the general public about how complicated the scientific process of pregnancy is. 
+
+Most that go through infertility treatment are thrown into a world of exhaustion, anxiety, stress, and bewilderment. No fertility journey is identical. The process can take as little as a few months, or as long as multiple years. The longer an individual is in infertility treatment, the more susceptible they are to developing anxiety, depression, and other mental difficulties. Because this topic is so taboo and data is still lacking in the field, I've decided to create my own. 
+
+After 3 years of actively trying to conceive, mental breakdowns, sleepless nights, and constant medical visits, this is the result of my personal fertility journey... The bubble chart reads: 38 Blood Draws, 31 Ultrasounds, 8 Intrauterine Inseminations, 2 Miscarriages, and 1 baby harris coming November 2022 with an ultrasound picture of Meghan Harris' expected child. '>"),
     HTML("<center>")
 )
 
